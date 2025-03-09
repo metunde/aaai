@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -84,10 +83,23 @@
         
                         <li class="has-submenu parent-menu-item">
                             <a href="javascript:void(0)">About Us</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="about.html" class="sub-menu-item">Who We Are </a></li>
-                                <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Conferences</a></li>
+                            <ul class="submenu" style="display: flex; flex-direction: column;">
+                                <div>
+                                    <li><a href="about.html" class="sub-menu-item">Who We Are </a></li>
+                                    <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Conferences</a></li>
+                                    <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Partnerships</a></li>
+                                    <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Officers and Committees</a></li>
+                                    <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Honourary Members</a></li>    
+                                </div>
+                                <div>
+                                <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Ethics & Diversity</a></li>
+                                <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Resources</a></li>
+                                <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Awards</a></li>
+                                <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Mailing List</a></li>
+                                <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Policy Report</a></li>
 								
+                                </div>
+                               
                             </ul>
                         </li>
                         <li class="has-submenu parent-menu-item">
@@ -125,14 +137,14 @@
         <!-- Navbar End -->
 
         <!-- Hero Start -->
-        <section class="bg-half-170 d-flex text-white bg-primary " style="font-weight: bold;" >
+        <section class="bg-half d-flex text-white bg-primary " style="font-weight: bold;" >
             <div class="container mt-0" style="margin-top: 0;">
                 <div class="row mt-0 align-items-center position-relative"  
                 style="display: flex; width: 100%; ">
                 
                 <div class="col-md-6 mr-0 d-flex align-items-end p-4"  
                     style="
-                    width: 75vw; 
+                    width: 70vw; 
                     z-index: 1; 
                     background:url('./images//background/lagos.jpg'); 
                     background-size: cover;
@@ -156,14 +168,20 @@
             
                 
                 <div class="d-flex ml-0 p-0 justify-content-center align-items-center" 
-                style="height: 75vh;flex:1; width: 15vw;display: flex; flex-direction: column;border-left: 2px solid white; border-radius: 0 25px 25px 0;">
-            
-                <div style="flex: 1; display: flex; justify-content: center; align-items: center;background:#054189; ; width: 100%; border-bottom: 2px white solid;">event 1</div>
-                <div style="flex: 1; display: flex; justify-content: center; align-items: center;background:#054189; ; width: 100%; border-bottom: 2px white solid;">event 2</div>
-                <div style="flex: 1; display: flex; justify-content: center; align-items: center;background:#054189; ; width: 100%; border-bottom: 2px white solid;">event 3</div>
-                <div style="flex: 1; display: flex; justify-content: center; align-items: center; background:#054189; width: 100%;">event 4</div>
-            
+                style="
+                    height: 75vh;
+                    flex: 1;
+                    width: 20vw;
+                    display: flex;
+                    flex-direction: column;
+                    border-left: 2px solid white;
+                    border-radius: 0 25px 25px 0;
+                    overflow-y: auto;
+                " 
+                id="event-container">
             </div>
+            
+            
             
             </div>
             
@@ -172,7 +190,7 @@
         <!-- Hero End -->
 
 
-        <!-- Start -->
+        <!--Welcome Section Start -->
         <section class="section" id="service">
             <div class="container">
                 <div class="row justify-content-center">
@@ -335,73 +353,8 @@
                    
 
             <!-- Feature Start -->
-            <div class="container mt-100 mt-60">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <img src="images/ai.jpg" class="img-fluid" alt="">
-                    </div><!--end col-->
-
-                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                        <div class="section-title">
-                            <h4 class="title mb-4">Discover AI community</h4>
-                            <p class="text-muted para-desc">We define the AI community in Nigeria as:.</p>
-                            <ul class="list-unstyled">
-                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Students</li>
-								<li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Entrepreneurs</li>
-								<li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Academic Institutions</li>
-								<li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Government Agencies</li>
-								<li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Investment Community</li>
-                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>AI/ML Companies/Start-Ups</li>
-								<li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Our Corporations with AI/ML Initiatives</li>
-                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Foreign Based Organizations seeking AI/ML talent in Nigeria</li>
-                            </ul>
-                            <div class="watch-video mt-4">
-                                <a href="javascript:void(0)" class="btn btn-primary mb-2 me-2">Read More</a>
-                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#watchvideomodal" class="video-play-icon watch title-dark text-dark mb-2"><i class="mdi mdi-play play-icon-circle text-center d-inline-block me-2 rounded-pill text-white title-dark position-relative play play-iconbar"></i> Watch Now</a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-
-            <div class="container mt-100 mt-60">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2">
-                        <img src="images/ai2.png" class="img-fluid" alt="">
-                    </div><!--end col-->
-
-                    <div class="col-lg-6 col-md-6 col-12 order-2 order-md-1 mt-4 pt-2 mt-sm-0 pt-sm-0">
-                        <div class="section-title">
-                            <h4 class="title mb-4">Become a Member</h4>
-                            <p class="text-muted para-desc">AI professionals and students enjoy FREE access to AAAI Nigeria conferences and events. Membership of AAAI Nigeria qualifies you for the global membership, with full benefits, Some of which are;</p>
-                            <ul class="list-unstyled">
-                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Support for AI startups</li>
-                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Invitation to attend foreign AI events</li>
-                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Career building/job opportunity with our partners</li>
-                            </ul>
-
-                            <div class="mt-4">
-                                <div class="mt-4">
-                                <a href="http://aaai.org.ng/membership.html" class="btn btn-primary">Join Now <i data-feather="chevron-right" class="fea icon-sm"></i></a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-            <!-- Feature End -->
-
-            <!-- Review Start --> 
-			<!--
-            <div class="container mt-100 mt-60">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <div class="section-title text-center mb-4 pb-2">
-                            <h4 class="title mb-4">Happy Client's</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
-                        </div>
-                    </div>
-					--><!--end col-->
-                </div><!--end row-->
+            
+           
 				<!--
                 <div class="row">
                     <div class="col-12 mt-4">
@@ -502,92 +455,181 @@
                             </div>
                         </div>
                     </div><!--end col-->
+              
                 </div><!--end row-->
             </div><!--end container-->
             <!-- Review End -->
 
-            <!-- Calender start-->
+           
 
-            <section class="bg-half-170 d-flex text-white bg-primary " style="font-weight: bold;" >
-                <div class="container">
-                    <h2 class="text-center">Calendar</h2>
-                    <div class="mb-3">
-                        <label for="upcomingAAAIevents" class="form-label">Upcoming Conferences and Symposia</label>
-                        <select class="form-select" id="upcomingAAAIevents" onchange="aaaiFilterCalendar()">
-                            <option value="all">All events</option>
-                            <option value="490">IAAI Conference 2023</option>
-                            <option value="484">AAAI Conference 2023</option>
-                            <option value="491">AAAI Spring Symposium 2023</option>
-                            <option value="489">ICWSM Conference 2023</option>
-                            <option value="40075">AAAI 2023 Inaugural Summer Symposium Series</option>
-                            <option value="61281">AIES Conference 2023</option>
-                            <option value="75506">AIIDE Conference 2023</option>
-                            <option value="75533">AAAI 2023 Fall Symposium Series</option>
-                            <option value="79877">HCOMP-23</option>
-                            <option value="75406">AAAI Conference 2024</option>
-                            <option value="79998">AAAI 2024 Spring Symposium Series</option>
-                            <option value="90023">ICWSM-24</option>
-                            <option value="83913">20th International Conference on Intelligent Environments</option>
-                            <option value="90027">HCOMP-24</option>
-                            <option value="87334">Fall Symposium Series 2024</option>
-                            <option value="87335">AIIDE 2024</option>
-                            <option value="90112">BIOSTEC 2025</option>
-                            <option value="90110">ICAART 2025</option>
-                            <option value="90111">ICPRAM 2025</option>
-                            <option value="87331">AAAI Conference 2025</option>
-                            <option value="90531">Spring Symposium Series</option>
-                            <option value="90452">ICEIS 2025</option>
-                            <option value="91291">FLAIRS 2025</option>
-                            <option value="90529">Summer Symposium Series</option>
-                            <option value="90632">DeLTA 2025</option>
-                            <option value="90598">IE2025</option>
-                            <option value="91298">ICWSM 2025</option>
-                            <option value="91305">IC3K 2025</option>
-                            <option value="91242">IJCCI 2025</option>
-                            <option value="91464">Fall Symposium Series 2025</option>
-                            <option value="91465">AIIDE 2025</option>
-                            <option value="91460">AAAI Conference 2026</option>
-                        </select>
-                    </div>
-
-                    <div class="aaai-calendar">
-                        <h2 class="calendar-heading text-white">Upcoming Events</h2>
-                        <ul class="aaai-calendar alignwide card my-3" id="upcoming-events"></ul>
-                    </div>
-                    
-                    
-                
-                
-            </section><!--end section-->
-            <!-- Calender end-->
-
-            <!-- Subscribe Start -->
-            <div class="container mt-100 mt-60">
-                <div class="py-5 px-4 bg-primary rounded-pill" style="background: url('images/map.png') center center;">
-                    <div class="row justify-content-center">
-                        <div class="col-12">
-                            <div class="section-title text-center mb-4 pb-2">
-                                <h4 class="title text-white mb-4">Subscribe our Newsletter</h4>
-                                <p class="text-white-50 mx-auto para-desc mb-0">Please, Subscribe to our weekly newsletter and updates.</p>
-                            </div>
-                        </div><!--end col-->
-
-                        <div class="col-lg-8">
-                            <div class="text-center subcribe-form mt-4 pt-2">
-                                <form>
-                                    <div class="form-group mb-0">
-                                        <input type="email" id="email" name="email" class="rounded-pill" placeholder="Your Email Id">
-                                        <button type="submit" class="btn btn-pills btn-success">Subscribe Now</button>
-                                    </div>
-                                </form><!--end form-->
-                            </div><!--end subscribe form-->
-                        </div><!--end col-->
-                    </div><!--end row-->
-                </div><!--end div-->
-            </div><!--end container-->
-            <!-- Subscribe End -->
+          
         </section><!--end section-->
-        <!-- End -->
+        <!--Welcome Section  End -->
+
+
+         <!--Discover Section Start -->
+<section class="bg-half-170 d-flex text-dark" style="font-weight: bold;background-color: #e0e0e0;" >
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <img src="images/ai.jpg" class="img-fluid" alt="">
+                    </div><!--end col-->
+
+                    <div class="col-lg-6 col-md-6 col-12 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <div class="section-title">
+                            <h4 class="title mb-4">Discover AI community</h4>
+                            <p class="text-muted para-desc">We define the AI community in Nigeria as:.</p>
+                            <ul class="list-unstyled">
+                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Students</li>
+								<li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Entrepreneurs</li>
+								<li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Academic Institutions</li>
+								<li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Government Agencies</li>
+								<li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Investment Community</li>
+                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>AI/ML Companies/Start-Ups</li>
+								<li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Our Corporations with AI/ML Initiatives</li>
+                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Foreign Based Organizations seeking AI/ML talent in Nigeria</li>
+                            </ul>
+                            <div class="watch-video mt-4">
+                                <a href="javascript:void(0)" class="btn btn-primary mb-2 me-2">Read More</a>
+                                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#watchvideomodal" class="video-play-icon watch title-dark text-dark mb-2"><i class="mdi mdi-play play-icon-circle text-center d-inline-block me-2 rounded-pill text-white title-dark position-relative play play-iconbar"></i> Watch Now</a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                </div><!--end row-->
+            </div><!--end container-->
+        </section>
+         <!--Discover Section end -->
+
+
+         <!--Member Section Start -->
+        <section class="bg-half-170 d-flex text-dark" style="font-weight: bold;" >
+            <div class="container mt-100 mt-60">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2">
+                        <img src="images/ai2.png" class="img-fluid" alt="">
+                    </div><!--end col-->
+    
+                    <div class="col-lg-6 col-md-6 col-12 order-2 order-md-1 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <div class="section-title">
+                            <h4 class="title mb-4">Become a Member</h4>
+                            <p class="text-muted para-desc">AI professionals and students enjoy FREE access to AAAI Nigeria conferences and events. Membership of AAAI Nigeria qualifies you for the global membership, with full benefits, Some of which are;</p>
+                            <ul class="list-unstyled">
+                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Support for AI startups</li>
+                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Invitation to attend foreign AI events</li>
+                                <li class="mt-2"><i data-feather="check-circle" class="fea icon-sm text-primary me-2"></i>Career building/job opportunity with our partners</li>
+                            </ul>
+    
+                            <div class="mt-4">
+                                <div class="mt-4">
+                                <a href="http://aaai.org.ng/membership.html" class="btn btn-primary">Join Now <i data-feather="chevron-right" class="fea icon-sm"></i></a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+            <!-- Feature End -->
+    
+            <!-- Review Start --> 
+            <!--
+            <div class="container mt-100 mt-60">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h4 class="title mb-4">Happy Client's</h4>
+                            <p class="text-muted para-desc mx-auto mb-0">Launch your campaign and benefit from our expertise on designing and managing conversion centered bootstrap4 html page.</p>
+                        </div>
+                    </div>
+                    --><!--end col-->
+                </div><!--end row-->
+
+        </section>
+         <!--Member Section end -->
+
+         <!-- Calender start-->
+         <section class="bg-half-170 d-flex text-white bg-primary " style="font-weight: bold;" >
+            <div class="container">
+                <h2 class="text-center">Calendar</h2>
+                <div class="mb-3">
+                    <label for="upcomingAAAIevents" class="form-label">Upcoming Conferences and Symposia</label>
+                    <select class="form-select" id="upcomingAAAIevents" onchange="aaaiFilterCalendar()">
+                        <option value="all">All events</option>
+                        <option value="490">IAAI Conference 2023</option>
+                        <option value="484">AAAI Conference 2023</option>
+                        <option value="491">AAAI Spring Symposium 2023</option>
+                        <option value="489">ICWSM Conference 2023</option>
+                        <option value="40075">AAAI 2023 Inaugural Summer Symposium Series</option>
+                        <option value="61281">AIES Conference 2023</option>
+                        <option value="75506">AIIDE Conference 2023</option>
+                        <option value="75533">AAAI 2023 Fall Symposium Series</option>
+                        <option value="79877">HCOMP-23</option>
+                        <option value="75406">AAAI Conference 2024</option>
+                        <option value="79998">AAAI 2024 Spring Symposium Series</option>
+                        <option value="90023">ICWSM-24</option>
+                        <option value="83913">20th International Conference on Intelligent Environments</option>
+                        <option value="90027">HCOMP-24</option>
+                        <option value="87334">Fall Symposium Series 2024</option>
+                        <option value="87335">AIIDE 2024</option>
+                        <option value="90112">BIOSTEC 2025</option>
+                        <option value="90110">ICAART 2025</option>
+                        <option value="90111">ICPRAM 2025</option>
+                        <option value="87331">AAAI Conference 2025</option>
+                        <option value="90531">Spring Symposium Series</option>
+                        <option value="90452">ICEIS 2025</option>
+                        <option value="91291">FLAIRS 2025</option>
+                        <option value="90529">Summer Symposium Series</option>
+                        <option value="90632">DeLTA 2025</option>
+                        <option value="90598">IE2025</option>
+                        <option value="91298">ICWSM 2025</option>
+                        <option value="91305">IC3K 2025</option>
+                        <option value="91242">IJCCI 2025</option>
+                        <option value="91464">Fall Symposium Series 2025</option>
+                        <option value="91465">AIIDE 2025</option>
+                        <option value="91460">AAAI Conference 2026</option>
+                    </select>
+                </div>
+
+                <div class="aaai-calendar">
+                    <h2 class="calendar-heading text-white">Upcoming Events</h2>
+                    <ul class="aaai-calendar alignwide card my-3" id="upcoming-events"></ul>
+                </div>
+                
+                
+            
+            
+        </section><!--end section-->
+        <!-- Calender end-->
+
+          <!-- Subscribe Start -->
+          <section class="bg-half-170 d-flex text-white" style="font-weight: bold;" >
+          <div class="container mt-100 mt-60">
+            <div class="py-5 px-4 bg-primary rounded-pill" style="background: url('images/map.png') center center;">
+                <div class="row justify-content-center">
+                    <div class="col-12">
+                        <div class="section-title text-center mb-4 pb-2">
+                            <h4 class="title text-white mb-4">Subscribe our Newsletter</h4>
+                            <p class="text-white-50 mx-auto para-desc mb-0">Please, Subscribe to our weekly newsletter and updates.</p>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-8">
+                        <div class="text-center subcribe-form mt-4 pt-2">
+                            <form>
+                                <div class="form-group mb-0">
+                                    <input type="email" id="email" name="email" class="rounded-pill" placeholder="Your Email Id">
+                                    <button type="submit" class="btn btn-pills btn-success">Subscribe Now</button>
+                                </div>
+                            </form><!--end form-->
+                        </div><!--end subscribe form-->
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end div-->
+        </div>
+        </section>
+        <!--end container-->
+        <!-- Subscribe End -->
+        
+
         <div class="position-relative">
             <div class="shape overflow-hidden text-dark">
                 <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -674,15 +716,10 @@
         <!-- Calender Script -->
         <script>
 const events = [
-    { title: "Spring Symposium Series", location: "Burlingame, CA", date: "2025-03-31", link: "https://aaai.org/conference/spring-symposia/sss25/" },
-    { title: "ICEIS 2025", location: "Porto, Portugal", date: "2025-04-04", link: "https://iceis.scitevents.org/" },
-    { title: "FLAIRS 2025", location: "Daytona Beach, Florida", date: "2025-05-20", link: "https://www.flairs-38.info/" },
-    { title: "Summer Symposium Series", location: "Dubai, UAE", date: "2025-05-20", link: "https://aaai.org/conference/summer-symposia/suss25/" },
-    { title: "DeLTA 2025", location: "Bilbao, Spain", date: "2025-06-13", link: "https://delta.scitevents.org" },
-    { title: "IE2025", location: "Darmstadt, Germany", date: "2025-06-23", link: "https://www.ie2025.fraunhofer.de/" },
-    { title: "ICWSM 2025", location: "Copenhagen, Denmark", date: "2025-06-23", link: "https://www.icwsm.org/2025/index.html" },
-    { title: "IC3K 2025", location: "Marbella, Spain", date: "2025-10-20", link: "https://ic3k.scitevents.org" },
-    { title: "IJCCI 2025", location: "Marbella, Spain", date: "2025-10-22", link: "https://ijcci.scitevents.org/" }
+    { title: "Training of Senior Secondary School Students in Lagos", location: "Burlingame, CA",month: "March 2025", date: "2025-03-31", link: "https://aaai.org/conference/spring-symposia/sss25/" },
+    { title: "Engagement with Law Enforcement Agencies on AI and Security", location: "Porto, Portugal",month: "April 2025", date: "2025-04-04", link: "https://iceis.scitevents.org/" },
+    { title: "Environmental AI Projects and Sustainability Initiatives", location: "Daytona Beach, Florida",month: "May 2025", date: "2025-05-20", link: "https://www.flairs-38.info/" },
+    { title: "AI in Governance and Community Engagement Programs", location: "Dubai, UAE",month: "May 2025", date: "2025-05-20", link: "https://aaai.org/conference/summer-symposia/suss25/" }
 ];
 
 function renderUpcomingEvents() {
@@ -699,7 +736,7 @@ function renderUpcomingEvents() {
         const eventItem = `
             <li class="calendar-row calendar-event">
 	<div class="my-3">
-		<h4>May 2025</h4>
+		<h4 class='text-dark'>${event.month}</h4>
 		<div class="card mb-2">
 			<div class="card-body" style="display: flex;flex-direction: row;align-items: center;justify-content: space-between; ">
 				<h5 class="text-dark">${event.title}</h5>
@@ -714,6 +751,43 @@ function renderUpcomingEvents() {
         eventContainer.innerHTML += eventItem;
     });
 }
+
+
+function renderFourEvents() {
+    const currentDate = new Date();
+    const upcomingEvents = events
+        .filter(event => new Date(event.date) >= currentDate)
+        .sort((a, b) => new Date(a.date) - new Date(b.date))
+        .slice(0, 4); // Take only the next 4 events
+
+    const eventContainer = document.getElementById("event-container");
+    eventContainer.innerHTML = ""; // Clear existing content
+
+    upcomingEvents.forEach((event, index) => {
+        const isLastEvent = index === upcomingEvents.length - 1;
+        const eventItem = `
+            <div style="
+                flex: 1; 
+                display: flex; 
+                justify-content: center; 
+                align-items: center;
+                background: #054189;
+                width: 100%;
+                ${isLastEvent ? '' : 'border-bottom: 2px white solid;'}
+                color: white;
+                padding: 10px;
+                text-align: center;
+            ">
+                ${event.title}
+            </div>
+        `;
+        eventContainer.innerHTML += eventItem;
+    });
+}
+
+// Run function when the page loads
+document.addEventListener("DOMContentLoaded", renderFourEvents);
+
 
 // Run function when the page loads
 document.addEventListener("DOMContentLoaded", renderUpcomingEvents);

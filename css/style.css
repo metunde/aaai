@@ -2129,8 +2129,13 @@ textarea.form-control {
   #topnav .logo .l-light {
     display: none !important;
   }
-  #topnav .container {
+  #topnav  {
     width: auto;
+  }
+
+  .container{
+    width: 100vw;
+    padding: 10px ;
   }
   #topnav #navigation {
     max-height: 400px;
@@ -2279,8 +2284,9 @@ textarea.form-control {
   background-position: center center;
 }
 
+
 .bg-half-170 {
-  padding: 170px 0;
+  padding: 60px 0;
   background-size: cover;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
