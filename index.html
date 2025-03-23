@@ -83,9 +83,9 @@
         
                         <li class="has-submenu parent-menu-item">
                             <a href="javascript:void(0)">About Us</a><span class="menu-arrow"></span>
-                            <ul class="submenu" style="display: flex; flex-direction: column;">
+                            <ul class="submenu" style="display: flex; flex-direction: row;">
                                 <div>
-                                    <li><a href="about.html" class="sub-menu-item">Who We Are </a></li>
+                                    <li><a href="about.html" class="sub-menu-item">Members</a></li>
                                     <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Conferences</a></li>
                                     <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Partnerships</a></li>
                                     <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Officers and Committees</a></li>
@@ -146,7 +146,7 @@
                     style="
                     width: 70vw; 
                     z-index: 1; 
-                    background:url('./images//background/lagos.jpg'); 
+                    background:url('./images/background/aai2.jpg'); 
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -553,39 +553,9 @@
                 <div class="mb-3">
                     <label for="upcomingAAAIevents" class="form-label">Upcoming Conferences and Symposia</label>
                     <select class="form-select" id="upcomingAAAIevents" onchange="aaaiFilterCalendar()">
-                        <option value="all">All events</option>
-                        <option value="490">IAAI Conference 2023</option>
-                        <option value="484">AAAI Conference 2023</option>
-                        <option value="491">AAAI Spring Symposium 2023</option>
-                        <option value="489">ICWSM Conference 2023</option>
-                        <option value="40075">AAAI 2023 Inaugural Summer Symposium Series</option>
-                        <option value="61281">AIES Conference 2023</option>
-                        <option value="75506">AIIDE Conference 2023</option>
-                        <option value="75533">AAAI 2023 Fall Symposium Series</option>
-                        <option value="79877">HCOMP-23</option>
-                        <option value="75406">AAAI Conference 2024</option>
-                        <option value="79998">AAAI 2024 Spring Symposium Series</option>
-                        <option value="90023">ICWSM-24</option>
-                        <option value="83913">20th International Conference on Intelligent Environments</option>
-                        <option value="90027">HCOMP-24</option>
-                        <option value="87334">Fall Symposium Series 2024</option>
-                        <option value="87335">AIIDE 2024</option>
-                        <option value="90112">BIOSTEC 2025</option>
-                        <option value="90110">ICAART 2025</option>
-                        <option value="90111">ICPRAM 2025</option>
-                        <option value="87331">AAAI Conference 2025</option>
-                        <option value="90531">Spring Symposium Series</option>
-                        <option value="90452">ICEIS 2025</option>
-                        <option value="91291">FLAIRS 2025</option>
-                        <option value="90529">Summer Symposium Series</option>
-                        <option value="90632">DeLTA 2025</option>
-                        <option value="90598">IE2025</option>
-                        <option value="91298">ICWSM 2025</option>
-                        <option value="91305">IC3K 2025</option>
-                        <option value="91242">IJCCI 2025</option>
-                        <option value="91464">Fall Symposium Series 2025</option>
-                        <option value="91465">AIIDE 2025</option>
-                        <option value="91460">AAAI Conference 2026</option>
+                       
+                        <option value="91465">AAAI NIGERIA EVENTS</option>
+                        <option value="91460">AAAI INTERNATIONAL EVENTS</option>
                     </select>
                 </div>
 
@@ -716,15 +686,22 @@
         <!-- Calender Script -->
         <script>
 const events = [
-    { title: "Training of Senior Secondary School Students in Lagos", location: "Burlingame, CA",month: "March 2025", date: "2025-03-31", link: "https://aaai.org/conference/spring-symposia/sss25/" },
-    { title: "Engagement with Law Enforcement Agencies on AI and Security", location: "Porto, Portugal",month: "April 2025", date: "2025-04-04", link: "https://iceis.scitevents.org/" },
-    { title: "Environmental AI Projects and Sustainability Initiatives", location: "Daytona Beach, Florida",month: "May 2025", date: "2025-05-20", link: "https://www.flairs-38.info/" },
-    { title: "AI in Governance and Community Engagement Programs", location: "Dubai, UAE",month: "May 2025", date: "2025-05-20", link: "https://aaai.org/conference/summer-symposia/suss25/" }
+    { title: "Training of Senior Secondary School Students in Lagos", location: "Lagos, Nigeria", month: "March 2025", date: "2025-03-31", link: "https://aaai.org/conference/spring-symposia/sss25/" },
+    { title: "Engagement with Law Enforcement Agencies on AI and Security", location: "Nigeria", month: "April 2025", date: "2025-04-04", link: "https://iceis.scitevents.org/" },
+    { title: "Environmental AI Projects and Sustainability Initiatives", location: "Nigeria", month: "May 2025", date: "2025-05-20", link: "https://www.flairs-38.info/" },
+    { title: "AI in Governance and Community Engagement Programs", location: "Nigeria", month: "May 2025", date: "2025-05-20", link: "https://aaai.org/conference/summer-symposia/suss25/" }
 ];
 
-function renderUpcomingEvents() {
+const events2 = [
+    { title: "AAAI International Conference on AI", location: "Tokyo, Japan", month: "June 2025", date: "2025-06-10", link: "https://aaai.org/conference/icai25/" },
+    { title: "AI and Healthcare Innovations Summit", location: "Berlin, Germany", month: "July 2025", date: "2025-07-15", link: "https://aihealth.org/" },
+    { title: "Global AI and Ethics Symposium", location: "London, UK", month: "August 2025", date: "2025-08-05", link: "https://aies.org/" },
+    { title: "AI and Robotics Future Conference", location: "San Francisco, USA", month: "September 2025", date: "2025-09-22", link: "https://airobotics.org/" }
+];
+
+function renderUpcomingEvents(eventList) {
     const currentDate = new Date();
-    const upcomingEvents = events
+    const upcomingEvents = eventList
         .filter(event => new Date(event.date) >= currentDate)
         .sort((a, b) => new Date(a.date) - new Date(b.date))
         .slice(0, 5);
@@ -735,22 +712,50 @@ function renderUpcomingEvents() {
     upcomingEvents.forEach(event => {
         const eventItem = `
             <li class="calendar-row calendar-event">
-	<div class="my-3">
-		<h4 class='text-dark'>${event.month}</h4>
-		<div class="card mb-2">
-			<div class="card-body" style="display: flex;flex-direction: row;align-items: center;justify-content: space-between; ">
-				<h5 class="text-dark">${event.title}</h5>
-				<p class="text-dark">${event.location}</p>
-				<p class="text-dark"><small class="text-muted">${new Date(event.date).toDateString()}</small></p>
-				<a href="${event.link}" class="btn btn-primary" target="_blank">Website</a>
-			</div>
-		</div>
-	</div>
+                <div class="my-3">
+                    <h4 class='text-dark'>${event.month}</h4>
+                    <div class="card mb-2">
+                        <div class="card-body" style="
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                        ">
+                            <h5 class="text-dark" style="
+                                white-space: normal;
+                                overflow-wrap: break-word;
+                                flex-shrink: 1;
+                                margin: 0 8px 0 0;
+                                max-width: 40%;
+                            ">
+                                ${event.title}
+                            </h5>
+                            <p class="text-dark" style="flex-shrink: 0;">${event.location}</p>
+                            <p class="text-dark" style="flex-shrink: 0;">
+                                <small class="text-muted">${new Date(event.date).toDateString()}</small>
+                            </p>
+                            <a href="${event.link}" class="btn btn-primary" target="_blank" style="flex-shrink: 0;">Register</a>
+                        </div>
+                    </div>
+                </div>
             </li>
         `;
         eventContainer.innerHTML += eventItem;
     });
 }
+
+function aaaiFilterCalendar() {
+    const selectedValue = document.getElementById("upcomingAAAIevents").value;
+    
+    if (selectedValue === "91465") {
+        renderUpcomingEvents(events); // Render AAAI Nigeria Events
+    } else if (selectedValue === "91460") {
+        renderUpcomingEvents(events2); // Render AAAI International Events
+    }
+}
+
+// Render Nigeria events by default
+document.addEventListener("DOMContentLoaded", () => renderUpcomingEvents(events));
 
 
 function renderFourEvents() {

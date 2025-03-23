@@ -38,64 +38,102 @@
         </div>
         <!-- Loader End -->
 
-        <!-- Navbar STart -->
-        <header id="topnav" class="defaultscroll sticky">
-            <div class="container">
-                <!-- Logo container-->
-                <div>
-                    <a class="logo" href="index.html">
-                        <img src="images/logo-dark.png" height="44" alt="">
-                    </a>
-                </div>                 
-                <div class="buy-button">
-                    <a href="membership.html" class="btn btn-primary">Membership</a>
-                </div><!--end login button-->
-                <!-- End Logo container-->
-                <div class="menu-extras">
-                    <div class="menu-item">
-                        <!-- Mobile menu toggle-->
-                        <a class="navbar-toggle" id="isToggle" onClick="toggleMenu()">
-                            <div class="lines">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </a>
-                        <!-- End mobile menu toggle-->
-                    </div>
-                </div>
-        
-                <div id="navigation">
-                    <!-- Navigation Menu-->   
-                    <ul class="navigation-menu">
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
-                            
-                        </li>
-        
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">About</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="about.html" class="sub-menu-item">About </a></li>
-                                <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Conferences</a></li>
-								<li><a href="membership.html" class="sub-menu-item">Membership</a></li>
-                            </ul>
-                        </li>
-						<li><a href="contact.html" class="sub-menu-item">Programs</a></li>
-                        <li class="has-submenu parent-menu-item">
-                            <a href="javascript:void(0)">Trainings</a><span class="menu-arrow"></span>
-                            <ul class="submenu">
-                                <li><a href="#ai-growth.html" class="sub-menu-item">AI for Growth Workshop</a></li>
-                                <li><a href="#ai-events.html" class="sub-menu-item">AI Events</a></li>
-                            </ul>
-                        </li>
+       <!-- Navbar STart -->
+       <header id="topnav"  class="defaultscroll sticky"
+       style="background: url('./images/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner.jpg');
+       background-size: cover;
+                   background-repeat: no-repeat;
+                   background-position: center;
+       ">
+           <div class="container">
+               <!-- Logo container-->
+               <div>
+                   <a class="logo" href="index.html">
+                       <img src="images/logo-light.png" height="44" alt="">
+                   </a>
+               </div>                 
+               <div class="buy-button">
+                   <a href="membership.html">
+                       <div class="btn btn-gold login-btn-primary">Membership</div>
+                       <div class="btn btn-gold login-btn-light">Membership</div>
+                   </a>
+               </div><!--end login button-->
+               <!-- End Logo container-->
+               <div class="menu-extras">
+                   <div class="menu-item">
+                       <!-- Mobile menu toggle-->
+                       <a class="navbar-toggle" id="isToggle" onClick="toggleMenu()">
+                           <div class="lines">
+                               <span></span>
+                               <span></span>
+                               <span></span>
+                           </div>
+                       </a>
+                       <!-- End mobile menu toggle-->
+                   </div>
+               </div>
+       
+               <div id="navigation">
+                   <!-- Navigation Menu-->   
+                   <ul class="navigation-menu nav-light">
+                       <li class="parent-menu-item">
+                           <a href="index.html">Home</a><span class="menu-arrow"></span>
+                       </li>
+       
+                       <li class="has-submenu parent-menu-item">
+                           <a href="javascript:void(0)">About Us</a><span class="menu-arrow"></span>
+                           <ul class="submenu" style="display: flex; flex-direction: row;">
+                               <div>
+                                   <li><a href="about.html" class="sub-menu-item">Members</a></li>
+                                   <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Conferences</a></li>
+                                   <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Partnerships</a></li>
+                                   <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Officers and Committees</a></li>
+                                   <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Honourary Members</a></li>    
+                               </div>
+                               <div>
+                               <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Ethics & Diversity</a></li>
+                               <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Resources</a></li>
+                               <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Awards</a></li>
+                               <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Mailing List</a></li>
+                               <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Policy Report</a></li>
+                               
+                               </div>
+                              
+                           </ul>
+                       </li>
+                       <li class="has-submenu parent-menu-item">
+                           <a href="javascript:void(0)">Programs</a><span class="menu-arrow"></span>
+                           <ul class="submenu">
+                               <li><a href="#" class="sub-menu-item">Virtual </a></li>
+                               <li><a href="#" class="sub-menu-item">Physical</a></li>
+                           </ul>
+                       </li>
+                       <li class="has-submenu parent-menu-item">
+                           <a href="javascript:void(0)">Trainings</a><span class="menu-arrow"></span>
+                           <ul class="submenu">
+                               <li><a href="#ai-growth.html" class="sub-menu-item">Nigeria</a></li>
+                               <li><a href="#ai-events.html" class="sub-menu-item">Africa</a></li>
+                               <li><a href="#ai-events.html" class="sub-menu-item">Europe</a></li>
+                               <li><a href="#ai-events.html" class="sub-menu-item">Asia</a></li>
+                               <li><a href="#ai-events.html" class="sub-menu-item">Americas</a></li>
+                           </ul>
+                       </li>
+                       <li class="has-submenu parent-menu-item">
+                           <a href="javascript:void(0)">AI Jobs</a><span class="menu-arrow"></span>
+                           <ul class="submenu">
+                               <li><a href="#" class="sub-menu-item">Local </a></li>
+                               <li><a href="#" class="sub-menu-item">Foreign</a></li>
+                           </ul>
+                       </li>
+                       <li><a href="contact.html" class="sub-menu-item">Publications</a></li>
+                       <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
+                      
 
-                        <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
-                    </ul><!--end navigation menu-->
-                </div><!--end navigation-->
-            </div><!--end container-->
-        </header><!--end header-->
-        <!-- Navbar End -->
+                   </ul><!--end navigation menu-->
+               </div><!--end navigation-->
+           </div><!--end container-->
+       </header><!--end header-->
+       <!-- Navbar End -->
 
         <!-- Hero Start -->
         <section class="bg-half bg-light d-table w-100">
@@ -144,9 +182,10 @@
                                 <i data-feather="mail" class="fea icon-md-md text-white"></i>
                             </div>
                             <div class="content ms-3">
-                                <h5 class="title mb-0">Email Id</h5>
-                                <a href="mailto:contact@aaai.com.ng" class="text-primary">contact@aaai.com.ng</a><br/>
-                                <a href="mailto:aaainigeria@gmail.com" class="text-primary">aaainigeria@gmail.com</a>
+                                <h5 class="title mb-0">Email</h5>
+                                <a href="enquiries@aaai.org.ng" class="text-primary">enquiries@aaai.org.ng</a><br/>
+                                <a href="mailto:info@aaai.org.ng
+                                " class="text-primary">info@aaai.org.ng          </a>
                             </div>
                         </div>
                     </div><!--end col-->

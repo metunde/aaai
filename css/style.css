@@ -30,10 +30,39 @@ body {
   color: #3c4858;
 }
 
+.membership{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  font-weight: bold; 
+
+}
+
+.membership-plan{
+ 
+ font-size: large;
+ font-weight: bold; 
+flex: 1; 
+display: flex;
+ flex-direction: column; 
+ justify-content:space-between;
+  padding: 20px;
+   border: 1px solid #003a79;
+   box-shadow:inset 0px 3px 3px#003a79;
+   border-radius: 8px;
+  }
+
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Muli", sans-serif;
   line-height: 1.5;
   font-weight: 600 !important;
+}
+
+.benefits{
+  list-style-type: none;
 }
 
 ::-moz-selection {
