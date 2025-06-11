@@ -84,25 +84,25 @@
                         <a href="javascript:void(0)">About Us</a><span class="menu-arrow"></span>
                         <ul class="submenu" style="display: flex; flex-direction: row;">
                             <div>
-                                <li><a href="about.html" class="sub-menu-item">Members</a></li>
+                                <li><a href="about.html" class="sub-menu-item">Who We Are</a></li>
                                 <li><a href="https://aaai.org/Conferences/conferences.php"
                                         class="sub-menu-item">Conferences</a></li>
-                                <li><a href="https://aaai.org/Conferences/conferences.php"
+                                <li><a href="#"
                                         class="sub-menu-item">Partnerships</a></li>
-                                <li><a href="https://aaai.org/Conferences/conferences.php"
-                                        class="sub-menu-item">Officers and Committees</a></li>
-                                <li><a href="about.html#hons" class="sub-menu-item">Honourary Members</a></li>
+                                        <li><a href="members.html"
+                                            class="sub-menu-item">AAAI Nigeria Executives</a></li>
+                                <li><a href="honour.html" class="sub-menu-item">Honourary Members</a></li>
                             </div>
                             <div>
-                                <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Ethics
+                                <li><a href="#" class="sub-menu-item">Ethics
                                         & Diversity</a></li>
-                                <li><a href="https://aaai.org/Conferences/conferences.php"
+                                <li><a href="#"
                                         class="sub-menu-item">Resources</a></li>
-                                <li><a href="https://aaai.org/Conferences/conferences.php"
+                                <li><a href="#"
                                         class="sub-menu-item">Awards</a></li>
-                                <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Mailing
+                                <li><a href="#" class="sub-menu-item">Mailing
                                         List</a></li>
-                                <li><a href="https://aaai.org/Conferences/conferences.php" class="sub-menu-item">Policy
+                                <li><a href="#" class="sub-menu-item">Policy
                                         Report</a></li>
 
                             </div>
@@ -183,7 +183,7 @@
                     border-left: 2px solid white;
                     border-radius: 0 25px 25px 0;
                     overflow-y: auto;
-                " id="event-container">
+                " id="event-container" >
                 </div>
 
 
@@ -867,8 +867,11 @@
                 color: white;
                 padding: 10px;
                 text-align: center;
-            ">
-                ${event.title}
+                
+            "
+           
+            >
+               <a style="color:white;" href=${event.link}> ${event.title} </a> 
             </div>
         `;
                 eventContainer.innerHTML += eventItem;
