@@ -1,0 +1,22 @@
+// posts.js
+export const posts = [
+    {
+      title: "Publication Title 1",
+      content: "lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tincidunt.",
+      link: "#",
+      id: 1
+    },
+    {
+      title: "Publication Title 2",
+      content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tincidunt lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tincidunt lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tincidunt lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tincidunt lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tincidunt.",
+      link: "#",
+      id: 2
+    },
+    {
+      title: "Publication Title 3",
+      content: "lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tincidunt lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tincidunt lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tincidunt.lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tinciduntlorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat nec quam facilisis tincidunt",
+      link: "#",
+      id: 3
+    }
+  ];
+  

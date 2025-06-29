@@ -29,9 +29,9 @@ if(trim($comments) == '') {
 	exit();
 }
 
-if(get_magic_quotes_gpc()) {
-	$comments = stripslashes($comments);
-}
+// if(get_magic_quotes_gpc()) {
+// 	$comments = stripslashes($comments);
+// }
 
 
 // Configuration option.

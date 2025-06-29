@@ -21,7 +21,21 @@
 
     <body>
         <!-- Loader Start -->
-      
+        <div id="preloader">
+            <div id="status">
+                <div class="logo">
+                    <img src="images/logo-dark.png" height="44" class="d-block mx-auto" alt="">
+                </div>
+                <div class="sk-chase mt-4">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+            </div>
+        </div>
         <!-- Loader End -->
 
       <!-- Navbar STart -->
@@ -132,135 +146,15 @@
         <section class="bg-half bg-light d-table w-100">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-12 text-center">
-                        <div class="title-heading">
-                            <h4>Get In Touch !</h4>
-                            <p class="text-muted para-desc mx-auto mt-3 mb-0">Hello, Please fill the form below, and We'll get back to you shortly.</p> 
-                            <nav aria-label="breadcrumb" class="d-inline-block mt-4">
-                                <ul class="breadcrumb mb-0">
-                                    <li class="breadcrumb-item"><a href="index.html">AAAI Nigeria</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div><!--end col-->
-                    <div class="home-shape-arrow">
-                        <a href="#contact" class="scroll-down"><i class="mdi mdi-arrow-down arrow-icon bg-light text-dark h5"></i></a>
-                    </div>
+                    
+                    
                 </div><!--end row-->
             </div> <!--end container-->
         </section><!--end section-->
         <!-- Hero End -->
 
         <!-- About Start -->
-        <section class="section pb-0" id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12">
-                        <div class="contact-detail d-flex align-items-center">
-                            <div class="contact-icon rounded-circle bg-primary text-center">
-                                <i data-feather="phone" class="fea icon-md-md text-white"></i>
-                            </div>
-                            <div class="content ms-3">
-                                <h5 class="title mb-0">Phone</h5>
-                                <a href="tel:+2349020166683" class="text-primary">+2349020166683</a>
-                                <a href="tel:+2347068914510" class="text-primary">+2347068914510</a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="contact-detail d-flex align-items-center">
-                            <div class="contact-icon rounded-circle bg-primary text-center">
-                                <i data-feather="mail" class="fea icon-md-md text-white"></i>
-                            </div>
-                            <div class="content ms-3">
-                                <h5 class="title mb-0">Email</h5>
-                                <a href="enquiries@aaai.org.ng" class="text-primary">enquiries@aaai.org.ng</a><br/>
-                                <a href="mailto:info@aaai.org.ng
-                                " class="text-primary">info@aaai.org.ng          </a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 mt-lg-0 pt-2 pt-lg-0">
-                        <div class="contact-detail d-flex align-items-center">
-                            <div class="contact-icon rounded-circle bg-primary text-center">
-                                <i data-feather="map-pin" class="fea icon-md-md text-white"></i>
-                            </div>
-                            <div class="content ms-3">
-                                <h5 class="title mb-0">Map</h5>
-                                <a href="#" class="video-play-icon text-primary">View on Google map</a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row align-items-center">
-                    <div class="col-md-6 order-md-1 order-2 mt-md-5 mt-4 pt-2">
-                        <div class="me-lg-5">
-                            <img src="images/svg/revenue-graph-colour.svg" class="img-fluid" alt="">
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-md-6 order-md-2 order-1 mt-md-5 mt-4 pt-2">
-                        <div class="custom-form mt-3 p-4 shadow rounded">
-                            <form method="post" action="send_mail.php">
-                                <p id="error-msg"></p>
-                                <div id="simple-msg"></div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Your Name <span class="text-danger">*</span></label>
-                                            <input name="name" id="name" type="text" class="form-control" placeholder="Name :" required>
-                                        </div>
-                                    </div>
-                            
-                                    <div class="col-md-6">
-                                        <div class="mb-3">
-                                            <label class="form-label">Your Email <span class="text-danger">*</span></label>
-                                            <input name="email" id="email" type="email" class="form-control" placeholder="Email :" required>
-                                        </div> 
-                                    </div><!--end col-->
-                            
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label class="form-label">Subject</label>
-                                            <input name="subject" id="subject" class="form-control" placeholder="Subject :">
-                                        </div>
-                                    </div><!--end col-->
-                            
-                                    <div class="col-12">
-                                        <div class="mb-3">
-                                            <label class="form-label">Comments <span class="text-danger">*</span></label>
-                                            <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Message :" required></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="d-grid">
-                                            <button type="submit" id="submit" name="send" class="btn btn-primary">Send Message</button>
-                                        </div>
-                                    </div><!--end col-->
-                                </div><!--end row-->
-                            </form>
-                        </div><!--end custom-form-->
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-
-            <div class="container-fluid px-0 mt-100 mt-60">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.528976303205!2d3.4024884147703363!3d6.454454095330496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b5d61fd491d%3A0xd03b144ccce6ab85!2sSURA%20Shopping%20Complex!5e0!3m2!1sen!2sng!4v1665733121465!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </section><!--end section-->
+       <!--end section-->
         <!-- About End -->
 
         <!-- Client Start -->

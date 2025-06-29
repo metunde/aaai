@@ -268,6 +268,23 @@ h6 {
   font-size: 56px !important;
 }
 
+.post{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  background-color: #0c233f;
+  margin: 2px;
+  padding: 5px;
+}
+.header-text{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; 
+  padding: 20px;
+}
+
 .bg-primary {
   background-color: #0666db !important;
 }

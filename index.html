@@ -112,8 +112,8 @@
                     <li class="has-submenu parent-menu-item">
                         <a href="javascript:void(0)">Programs</a><span class="menu-arrow"></span>
                         <ul class="submenu">
-                            <li><a href="#" class="sub-menu-item">Virtual </a></li>
-                            <li><a href="#" class="sub-menu-item">Physical</a></li>
+                            <li><a href="./virtual.html" class="sub-menu-item">Virtual </a></li>
+                            <li><a href="./physical.html" class="sub-menu-item">Physical</a></li>
                         </ul>
                     </li>
                     <li class="has-submenu parent-menu-item">
@@ -133,7 +133,7 @@
                             <li><a href="#" class="sub-menu-item">Foreign</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="sub-menu-item">Publications</a></li>
+                    <li><a href="publication.html" class="sub-menu-item">Publications</a></li>
                     <li><a href="contact.html" class="sub-menu-item">Contact</a></li>
 
 
@@ -146,7 +146,7 @@
     <!-- Hero Start -->
     <section class="bg-half d-flex text-white bg-primary " style="font-weight: bold;">
         <div class="container mt-0" style="margin-top: 0;">
-            <div class="row mt-0 align-items-center position-relative" style="display: flex; width: 100%; ">
+            <div class="row mt-0 align-items-center justify-content-center" style="display: flex; width: 100%; ">
 
                 <div class="col-md-6 mr-0 d-flex align-items-end p-4" style="
                     width: 70vw; 
@@ -744,7 +744,7 @@
         </div>
     </div>
     <!-- Video Popup End -->
-
+  <script ></script>
     <!-- javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Icon -->
@@ -786,7 +786,7 @@
                 .slice(0, 5);
 
             const eventContainer = document.getElementById("upcoming-events");
-            eventContainer.innerHTML = ""; // Clear previous entries
+            eventContainer.innerHTML = ""; 
 
             upcomingEvents.forEach(event => {
                 const eventItem = `
@@ -833,13 +833,12 @@
             const selectedValue = document.getElementById("upcomingAAAIevents").value;
 
             if (selectedValue === "91465") {
-                renderUpcomingEvents(events); // Render AAAI Nigeria Events
+                renderUpcomingEvents(events); 
             } else if (selectedValue === "91460") {
-                renderUpcomingEvents(events2); // Render AAAI International Events
+                renderUpcomingEvents(events2); 
             }
         }
 
-        // Render Nigeria events by default
         document.addEventListener("DOMContentLoaded", () => renderUpcomingEvents(events));
 
 
@@ -848,10 +847,10 @@
             const upcomingEvents = events
                 .filter(event => new Date(event.date) >= currentDate)
                 .sort((a, b) => new Date(a.date) - new Date(b.date))
-                .slice(0, 4); // Take only the next 4 events
+                .slice(0, 4); 
 
             const eventContainer = document.getElementById("event-container");
-            eventContainer.innerHTML = ""; // Clear existing content
+            eventContainer.innerHTML = ""; 
 
             upcomingEvents.forEach((event, index) => {
                 const isLastEvent = index === upcomingEvents.length - 1;
@@ -878,17 +877,17 @@
             });
         }
 
-        // Run function when the page loads
         document.addEventListener("DOMContentLoaded", renderFourEvents);
 
 
-        // Run function when the page loads
         document.addEventListener("DOMContentLoaded", renderUpcomingEvents);
 
 
         document.addEventListener("DOMContentLoaded", renderUpcomingEvents);
 
     </script>
+
+   
 </body>
 
 </html>
